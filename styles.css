@@ -1,0 +1,174 @@
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Layout Sections */
+header.hero {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects .project {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.projects .project:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Footer icon links */
+.footer-icon-link {
+  color: #007BFF;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-icon-link:hover {
+  color: #0056b3;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  header.hero {
+    padding: 3rem 1rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .projects .project {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Glowing Blue Underline Hover for Headings */
+.about h2,
+.projects h2,
+.contact h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.about h2::after,
+.projects h2::after,
+.contact h2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #007BFF;
+  box-shadow: 0 0 8px #007BFF;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.about h2:hover::after,
+.projects h2:hover::after,
+.contact h2:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hero-photo {
+  margin-top: 2rem;
+  max-width: 200px;    /* adjust size as you want */
+  width: 100%;
+  height: auto;
+  border-radius: 50%;  /* makes it a circle */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);  /* subtle blue glow */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
