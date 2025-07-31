@@ -6,7 +6,7 @@ const avatar = document.getElementById("avatar");
 toggleTheme.addEventListener("change", () => {
   body.classList.toggle("dark-mode");
   if (body.classList.contains("dark-mode")) {
-    avatar.src = "assets/avatar-dark.png"; // swap this path if needed
+    avatar.src = "assets/avatar-confidence1.png"; // swap this path if needed
   } else {
     avatar.src = "assets/avatar-confidence1.png";
   }
