@@ -8,7 +8,7 @@ toggleTheme.addEventListener("change", () => {
   if (body.classList.contains("dark-mode")) {
     avatar.src = "assets/avatar-confidence1.png"; // swap this path if needed
   } else {
-    avatar.src = "assets/avatar-confidence1.png";
+    avatar.src = "assets/avatar-bossmode.png";
   }
 });
 
