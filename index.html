@@ -1,89 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Onalenna Molehabangwe | Software Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="hero">
-    <h1>Hi, I'm Onalenna Molehabangwe</h1>
-    <p>Aspiring Software Engineer | Python Enthusiast | Resilient Learner</p>
-    <img src="WhatsApp Image 2025-07-05 at 17.01.18_3888e0d2.jpg" alt="Onalenna Molehabangwe" class="hero-photo" />
-    <div><br>
-    <a href="#projects" class="btn">View My Work</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Theme Toggle -->
+    <label class="theme-switch">
+      <input type="checkbox" id="toggleTheme" />
+      <span class="slider"></span> Toggle Mode
+    </label>
+
+    <!-- Hero Section -->
+    <header>
+      <section name="hero">
+        <div class="avatar-container">
+          <h1>Hello! My name is Onalenna 👩🏽‍💻</h1>
+          <div class="avatar-glow">
+            <img id="avatar" src="assets/avatar-confidence1.png" alt="avatar" />
+          </div>
+          <p class="tagline">
+            ~My friends call me Ona. I’m an aspiring Software Developer. With
+            that said, please check out my work. 😁
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Section -->
+      <section id="about" class="section-with-avatar">
+        <div class="text">
+          <h2>✨ About Me</h2>
+          <p>
+            I’m Ona. I’ve always loved technology, building things, and solving
+            problems. I’m your future dev baddie. Period.
+          </p>
+        </div>
+        <div class="avatar-side">
+          <img src="assets/avatar-bossmode.png" alt="Boss Mode Ona" />
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-with-avatar">
+        <div class="text">
+          <h2>🧠 Skills</h2>
+          <p>
+            From Python to JavaScript, from server config to frontend finesse —
+            I’m building it all.
+          </p>
+        </div>
+        <div class="avatar-side">
+          <img src="assets/avatar-focused.png" alt="Focused Ona" />
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="project" class="section-with-avatar">
+        <div class="text">
+          <h2>💻 Projects</h2>
+          <p>
+            These are the apps, websites, and chaos I’ve created and debugged at
+            3am while crying. Enjoy.
+          </p>
+        </div>
+
+        <div class="avatar-side coffee-avatar">
+          <img
+            src="assets/avatar-coderage.jpg"
+            alt="Tired Ona"
+            class="avatar-tired"
+            title="Hover for caffeine injection ☕"
+          />
+          <img
+            src="assets/avatar-tired.png"
+            alt="Coffee Ona"
+            class="avatar-coffee"
+          />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-with-avatar">
+        <div class="text">
+          <h2>📞 Contact Me</h2>
+          <p>
+            If you liked what you saw, hit me up. I’m hireable, reliable, and
+            bring that Gen Z sauce to your team.
+          </p>
+        </div>
+        <div class="avatar-side interactive-avatar">
+          <img
+            src="assets/avatar-hire-me.png"
+            alt="Hire Me Ona"
+            class="click-avatar"
+            onclick="showPopup()"
+          />
+          <div class="speech-bubble">
+            💬 Click me! I’ve got something important to tell you.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Custom Popup Modal -->
+    <div id="customPopup" class="popup-box hidden">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>👩🏽‍💻 Hire Me!</h2>
+        <p>
+          I’m Ona — passionate about tech, obsessed with clean UI, and ready to
+          join your team. Let’s build the future together 🚀✨
+        </p>
+        <button class="contact-btn" onclick="window.location='#contact'">
+          Contact Me
+        </button>
+      </div>
     </div>
-  </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm currently completing my BSc in Software Engineering with a 76.8% average.
-      My top-performing modules include Procedural Programming, Mobile Development, and OOP Design.
-      I am growing into a stronger and more capable developer.
-      I am a motivated and disciplined Software Engineering student with strong foundations in Python, HTML, CSS, and JavaScript. 
-      I am eager to solve real-life problems and to contribute to the organization. 
-      I am actively building skills in other programming languages, and I am open to internship and junior positions.
-    </p>
-    <p>
-      <strong>Skills:</strong> Python, HTML, CSS, JavaScript, OOP, Agile Project Management, UI/UX Design
-    </p>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Task Tracker Web App</h3>
-      <p>A responsive interface for managing daily tasks and goals.</p>
-      <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
-      <a href="#">GitHub Repo</a>
-    </div>
-    <div class="project">
-      <h3>Agricultural Drone Dashboard</h3>
-      <p>UI design for managing drone spray missions for farming.</p>
-      <p><strong>Stack:</strong> HTML, CSS</p>
-      <a href="#">View Code</a>
-      
-    </div>
-
-    <div class="project">
-        <h3>An C2C online shopping platform (For a school project)</h3>
-        <p>C2C e-commerce platform</p>
-        <p><strong>Stack:</strong> HTML, CSS, JS, PHP</p>
-        <a href="https://timelessarchives.store/">View the website</a>
-      
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: molehabangweonalenna1@outlook.com</p>
-    <p>
-        <a href="https://github.com/onahhh12">GitHub</a> | <a href="https://www.linkedin.com/in/onalenna-molehabangwe-65409827b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
-  </section>
-
-  <footer>
-  <p>
-    &copy; 2025 Onalenna Molehabangwe
-  </p>
-  <p>
-    <a href="https://github.com/onahhh12" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="GitHub">
-      <!-- GitHub SVG -->
-      <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.007-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.083-.2-.36-1.02.078-2.12 0 0 .67-.21 2.2.82a7.63 7.63 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.078 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-      </svg>
-    </a>
-    <a href="https://www.linkedin.com/in/onalenna-molehabangwe-65409827b" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="LinkedIn">
-      <!-- LinkedIn SVG -->
-      <svg height="20" width="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.5v2.22h.06c.62-1.17 2.14-2.4 4.41-2.4 4.72 0 5.58 3.11 5.58 7.16V24H17v-7.48c0-1.79-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.98V24H7.5V8z"/>
-      </svg>
-    </a>
-  </p>
-</footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
